@@ -13,6 +13,8 @@ Althought this light framework was build having in mind Nadron java server it ca
 
 The pipeline guarantees the same encoding/decoding while sending or receiving data from the server.
 
+The LengthFieldBasedFrameDecoder is smart while decoding a bunch of TCP packets with the unit packet spread on them, as well as decoding a single TCP packet with several unit of information (game defined packet). You can check in the test folder.
+
 Custom protocol
 ===============
 
